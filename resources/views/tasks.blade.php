@@ -64,8 +64,9 @@
 												<button type="submit" class="btn btn-danger">
 													<i class="fa fa-trash"></i>Delete
 												</button>
+												<a class="btn btn-danger" href="/task/{{$task->id}}">Detail</a>
+												<a class="btn btn-danger" href="/update/{{$task->id}}">Upadate</a>
 											</form>
-                                            <a class="btn btn-danger" href="/task/{{ $task->id  }}"><button class="btn btn-danger" >Detail</button></a>
 										</td>
 									</tr>
 								@endforeach
