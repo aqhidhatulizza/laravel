@@ -18,10 +18,18 @@
 
 						<!-- Task Name -->
 						<div class="form-group">
-							<label for="task-name" class="col-sm-3 control-label">Task</label>
+							<label for="task-name" class="col-sm-3 control-label">nama</label>
 
 							<div class="col-sm-6">
 								<input type="text" name="name" id="task-name" class="form-control" value="{{ old('task') }}">
+							</div>
+						</div>
+						<!-- Task alamat -->
+						<div class="form-group">
+							<label for="task-alamat" class="col-sm-3 control-label">alamat</label>
+
+							<div class="col-sm-6">
+								<input type="text" name="alamat" id="task-alamat" class="form-control" value="{{ old('task') }}">
 							</div>
 						</div>
 
@@ -47,13 +55,15 @@
 					<div class="panel-body">
 						<table class="table table-striped task-table">
 							<thead>
-								<th>Task</th>
+								<th>name</th>
+								<th>alamat</th>
 								<th>&nbsp;</th>
 							</thead>
 							<tbody>
 								@foreach ($tasks as $task)
 									<tr>
 										<td class="table-text"><div>{{ $task->name }}</div></td>
+										<td class="table-text"><div>{{ $task->alamat }}</div></td>
 
 										<!-- Task Delete Button -->
 										<td>
@@ -65,7 +75,7 @@
 													<i class="fa fa-trash"></i>Delete
 												</button>
 												<a class="btn btn-danger" href="/task/{{$task->id}}">Detail</a>
-												<a class="btn btn-danger" href="/update/{{$task->id}}">Upadate</a>
+												<a class="btn btn-danger" href="/update/{{$task->id}}">Update</a>
 											</form>
 										</td>
 									</tr>

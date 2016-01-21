@@ -19,10 +19,19 @@
 
                                 <!-- Task Name -->
                         <div class="form-group">
-                            <label for="task-name" class="col-sm-3 control-label">Task</label>
+                            <label for="task-name" class="col-sm-3 control-label">name</label>
 
                             <div class="col-sm-6">
                                 <input type="text" name="name" id="task-name" class="form-control" value="{{ $tasks->name }}">
+                            </div>
+                        </div>
+
+                        <!-- Task alamat -->
+                        <div class="form-group">
+                            <label for="task-alamat" class="col-sm-3 control-label">alamat</label>
+
+                            <div class="col-sm-6">
+                                <input type="text" name="alamat" id="task-alamat" class="form-control" value="{{ $tasks->alamat }}">
                             </div>
                         </div>
 
